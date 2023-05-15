@@ -140,7 +140,7 @@ class MineSweeper:
                 elif btn.count_bomb in colors:
                     color = colors.get(btn.count_bomb, 'black')
                     btn.config(text=btn.count_bomb, fg=color)
-
+#)))
     def reload(self):
         [child.destroy() for child in self.window.winfo_children()]
         self.__init__()
